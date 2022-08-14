@@ -25,15 +25,25 @@ body {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	margin: 0;
 }
-
-.flex-container {
+img {
+	max-width: 100%;
+}
+.flex-container,
+.grid-container {
 	--space-inline: 1rem;
-	--space-block: 1rem;
 	margin-inline: var(--space-inline);
+	border: 1px solid hsl(308, 100%, 28%);
+}
+.flex-container {
+	--space-block: 1rem;
 	padding-block: var(--space-block);
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid hsl(308, 100%, 28%);
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
 }
 .footer .flex-container {
 	--space-block: 2rem;
@@ -44,12 +54,22 @@ body {
 }
 
 @media (min-width: 768px) {
-	.flex-container {
+	.flex-container,
+	.grid-container {
 		--space-inline: 2.5rem;
+	}
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem 0.625rem;
 	}
 }
 @media (min-width: 1024px) {
-	.flex-container {
+	.flex-container,
+	.grid-container {
 		--space-inline: 10.3125rem;
+	}
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3.5rem 1.875rem;
 	}
 }
