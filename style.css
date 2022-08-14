@@ -26,17 +26,16 @@ body {
 	margin: 0;
 }
 
-.grid-container {
+.flex-container {
 	--space-inline: 1rem;
 	--space-block: 1rem;
 	margin-inline: var(--space-inline);
 	padding-block: var(--space-block);
-	display: grid;
+	display: flex;
 	justify-content: space-between;
-	grid-template-columns: repeat(2, max-content);
 	border: 1px solid hsl(308, 100%, 28%);
 }
-.grid-container.footer {
+.footer .flex-container {
 	--space-block: 2rem;
 }
 .footer {
@@ -45,12 +44,12 @@ body {
 }
 
 @media (min-width: 768px) {
-	.grid-container {
+	.flex-container {
 		--space-inline: 2.5rem;
 	}
 }
 @media (min-width: 1024px) {
-	.grid-container {
+	.flex-container {
 		--space-inline: 10.3125rem;
 	}
 }
