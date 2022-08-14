@@ -1,0 +1,22 @@
+/* ##### CSS VARIABLES ##### */
+:root {
+	--color-scampi: hsl(234, 25%, 52%);
+	--color-bunting: hsl(233, 54%, 16%);
+	--color-waterloo: hsl(232, 10%, 56%);
+	--color-violet-red: hsl(341, 92%, 62%);
+	--color-carnation-pink: hsl(341, 100%, 83%);
+	--color-white: hsl(0, 0%, 100%);
+	--gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+	--gradient-alt: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+	--fontSize-body-small: 1rem;
+	--fontSize-body-medium: 1.125rem;
+	--fontSize-heading-small: 1.5rem;
+	--fontSize-heading-medium: 2rem;
+	--fontSize-heading-large: 2.5rem;
+	--fontSize-heading-x-large: 3.5rem;
+}
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
