@@ -53,6 +53,12 @@ img {
 	margin-top: 200px;
 }
 
+/* ##### TOP ##### */
+.logo {
+	display: inline-block;
+	max-width: 89px;
+}
+
 @media (min-width: 768px) {
 	.flex-container,
 	.grid-container {
@@ -61,6 +67,9 @@ img {
 	.grid-container {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem 0.625rem;
+	}
+	.logo {
+		max-width: 12vw;
 	}
 }
 @media (min-width: 1024px) {
@@ -71,5 +80,8 @@ img {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 3.5rem 1.875rem;
+	}
+	.logo {
+		max-width: 114px;
 	}
 }
