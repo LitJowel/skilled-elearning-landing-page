@@ -31,6 +31,9 @@ body {
 img {
 	max-width: 100%;
 }
+a {
+	text-decoration: none;
+}
 .flex-container,
 .grid-container {
 	margin-inline: var(--space-inline);
@@ -39,11 +42,6 @@ img {
 .flex-container {
 	display: flex;
 	justify-content: space-between;
-}
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
 }
 .footer .flex-container {
 	--space-block: 2rem;
@@ -113,6 +111,49 @@ img {
 	margin-inline: auto;
 }
 
+/* ##### GRID CONTAINER ##### */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+}
+.card-top {
+	background: var(--gradient);
+	color: var(--color-white);
+	padding: 24px 28px 32px;
+	border-radius: 10px;
+}
+.card {
+	padding-top: 56px;
+	padding-bottom: 32px;
+	padding-inline: 28px;
+	position: relative;
+}
+.card-icon {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+}
+.card-title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--color-bunting);
+}
+.card-text {
+	font-weight: 500;
+	color: var(--color-waterloo);
+	line-height: 1.625;
+	margin-top: 16px;
+	margin-bottom: 24px;
+}
+.card-cta {
+	margin: 0;
+	color: var(--color-violet-red);
+	font-weight: 700;
+	font-size: var(--fontSize-body-medium);
+}
+
 @media (min-width: 498px) and (max-width: 767px) {
 	.intro-content {
 		max-width: 464px;
@@ -128,7 +169,7 @@ img {
 	}
 	.grid-container {
 		grid-template-columns: repeat(2, 1fr);
-		gap: 2rem 0.625rem;
+		gap: 2.5rem 0.625rem;
 	}
 	.logo {
 		max-width: 12vw;
@@ -150,6 +191,9 @@ img {
 		position: absolute;
 		right: -20em;
 		top: -10em;
+	}
+	.grid-container {
+		margin-top: 30px;
 	}
 }
 @media (min-width: 1024px) {
