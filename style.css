@@ -27,6 +27,7 @@
 body {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	margin: 0;
+	background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 img {
 	max-width: 100%;
@@ -37,7 +38,6 @@ a {
 .flex-container,
 .grid-container {
 	margin-inline: var(--space-inline);
-	border: 1px solid hsl(308, 100%, 28%);
 }
 .flex-container {
 	display: flex;
@@ -45,10 +45,6 @@ a {
 }
 .footer .flex-container {
 	--space-block: 2rem;
-}
-.footer {
-	background-color: var(--color-bunting);
-	margin-top: 200px;
 }
 
 /* ##### TOP ##### */
@@ -81,7 +77,6 @@ a {
 /* ##### INTRODUCTION ##### */
 .intro {
 	margin-inline: var(--space-inline);
-	border: 1px solid hsl(308, 100%, 28%);
 	margin-top: 38px;
 }
 .intro-title {
@@ -128,6 +123,8 @@ a {
 	padding-bottom: 32px;
 	padding-inline: 28px;
 	position: relative;
+	background-color: var(--color-white);
+	border-radius: 10px;
 }
 .card-icon {
 	position: absolute;
@@ -152,6 +149,18 @@ a {
 	color: var(--color-violet-red);
 	font-weight: 700;
 	font-size: var(--fontSize-body-medium);
+}
+.grid-section {
+	padding-bottom: 80px;
+}
+
+/* ##### FOOTER ##### */
+.footer {
+	background-color: var(--color-bunting);
+	padding-block: 36px;
+}
+.footer-cta {
+	background: var(--gradient-alt);
 }
 
 @media (min-width: 498px) and (max-width: 767px) {
